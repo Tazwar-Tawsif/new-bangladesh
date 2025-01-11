@@ -147,12 +147,17 @@ body {
 
 /* card */
 #pillars,
-.vision {
+.vision,
+.opinion,
+.news {
   max-width: 1280px;
   margin: 0 auto 80px;
 }
 
-#pillars h2 {
+#pillars h2,
+.vision h2,
+.opinion h2,
+.news h2 {
   color: rgb(14, 14, 14);
   font-family: Fira Sans;
   font-weight: 700;
@@ -211,6 +216,7 @@ body {
   box-sizing: border-box;
   border: 1px solid rgba(14, 14, 14, 0.15);
   border-radius: 16px;
+  margin-bottom: 32px;
 }
 
 .card2btn {
@@ -224,4 +230,84 @@ body {
   line-height: 19px;
   letter-spacing: 0%;
   text-align: left;
+  transition: 0.3s;
+}
+.card2btn:hover {
+  background: white;
+  color: var(--text-color);
+  border: 1px solid var(--btn-bg);
+}
+.vision .title p,
+.news .title p {
+  color: rgba(14, 14, 14, 0.7);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 24px 0 32px;
+}
+.quote {
+  background: url("/assets/quote-bg.png"), #ffffff;
+  background-repeat: no-repeat;
+  background-position: 24px 16px;
+  padding: 48px 24px;
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+}
+.quote .name {
+  font-weight: 600;
+  margin: 12px 0 4px;
+}
+.quote p:nth-child(odd) {
+  color: rgba(14, 14, 14, 0.6);
+}
+
+/* opinion */
+.qna {
+  padding: 32px;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+.opinion-flex {
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.opinion-select {
+  box-sizing: border-box;
+  border: 1px solid rgb(14, 14, 14);
+  border-radius: 4px;
+  padding: 10px 20px;
+  background: rgb(198, 228, 214);
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.news-article {
+  padding: 48px;
+  border-radius: 24px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+.news-article > img {
+  border-radius: 24px;
+}
+.news-article > section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
 }
