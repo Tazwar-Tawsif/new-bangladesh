@@ -15,6 +15,25 @@ body {
   font-family: "Fira Sans", serif;
   background-color: #f5f5f5;
 }
+.blue-less {
+  background: rgba(84, 144, 245, 0.2);
+}
+.blue {
+  background: rgb(84, 144, 245);
+}
+.green-less {
+  background: var(--background);
+}
+.green {
+  background: #09a15c;
+  margin-top: 25px;
+}
+.yellow-less {
+  background: #f7ebcf;
+}
+.yellow {
+  background: #ffc239;
+}
 /* Shared Elements */
 .p-text {
   font-size: 16px;
@@ -40,6 +59,8 @@ body {
 
 /* navbar */
 .navbar {
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,6 +82,146 @@ body {
   font-family: Fira Sans;
   font-weight: 600;
   line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* banner */
+.banner {
+  max-width: 1280px;
+  margin: 20px auto 80px;
+  padding: 80px 0px;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  border: none;
+}
+.banner .banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 94px;
+  width: 620px;
+}
+
+.banner-text p {
+  color: rgba(14, 14, 14, 0.5);
+  font-family: Fira Sans;
+  margin: 16px 0px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.banner-text h2 {
+  color: var(--text-color);
+  font-family: Fira Sans;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.banner-text button {
+  border-radius: 8px;
+  border: none;
+  padding: 17px 34px;
+  background: var(--btn-bg);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.banner-text button:hover {
+  background: rgb(255, 255, 255);
+  color: var(--btn-bg);
+  border: 1px solid var(--btn-bg);
+}
+
+/* card */
+#pillars,
+.vision {
+  max-width: 1280px;
+  margin: 0 auto 80px;
+}
+
+#pillars h2 {
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 32px 0px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 24px;
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+.card-info h4 {
+  color: rgba(14, 14, 14, 0.8);
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.card-info p {
+  color: rgba(14, 14, 14, 0.7);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* vision */
+.card-2 {
+  width: 411px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 32px;
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+}
+
+.card2btn {
+  padding: 11px 20px;
+  border-radius: 8px;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
   letter-spacing: 0%;
   text-align: left;
 }
