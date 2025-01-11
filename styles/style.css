@@ -125,7 +125,7 @@ body {
   text-align: left;
   margin-bottom: 24px;
 }
-.banner-text button {
+.btn {
   border-radius: 8px;
   border: none;
   padding: 17px 34px;
@@ -139,7 +139,7 @@ body {
   cursor: pointer;
 }
 
-.banner-text button:hover {
+.btn:hover {
   background: rgb(255, 255, 255);
   color: var(--btn-bg);
   border: 1px solid var(--btn-bg);
@@ -149,7 +149,8 @@ body {
 #pillars,
 .vision,
 .opinion,
-.news {
+.news,
+.donation {
   max-width: 1280px;
   margin: 0 auto 80px;
 }
@@ -231,6 +232,7 @@ body {
   letter-spacing: 0%;
   text-align: left;
   transition: 0.3s;
+  cursor: pointer;
 }
 .card2btn:hover {
   background: white;
@@ -294,6 +296,11 @@ body {
   text-align: left;
 }
 
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 .news-article {
   padding: 48px;
   border-radius: 24px;
@@ -310,4 +317,131 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
+}
+.news-article > section p {
+  margin-bottom: 20px;
+}
+.news-article > section > img {
+  width: 135px;
+}
+.news-article .p-span {
+  display: flex;
+  gap: 12px;
+}
+
+.donation {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+.donation h2 {
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.donation p {
+  color: rgba(14, 14, 14, 0.7);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.donate {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.card-donation {
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  padding: 40px;
+  background: rgb(255, 255, 255);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.card-donation:hover {
+  background-color: var(--background);
+}
+.donation > input[type="text"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  color: rgba(14, 14, 14, 0.3);
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.letter {
+  padding: 80px 0px;
+  background-color: var(--background);
+  border-radius: 24px;
+  background: rgb(198, 228, 214);
+}
+.letter > p {
+  width: 620px;
+}
+.letter-div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.letter-div > input[type="text"] {
+  width: 80%;
+  padding: 18px 80px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  color: rgba(14, 14, 14, 0.3);
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.foot {
+  background-color: white;
+  padding: 50px 160px;
+  text-align: center;
+}
+.foot h2 {
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0%;
+  margin: 50px 0 32px;
+}
+
+.foot hr {
+  width: 80%;
+  text-align: center;
+}
+.foot .icon {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+  margin: 32px 0 50px;
 }
