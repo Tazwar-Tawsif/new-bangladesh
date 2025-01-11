@@ -436,8 +436,7 @@ body {
 }
 
 .foot hr {
-  width: 80%;
-  text-align: center;
+  border: 1px solid rgba(14, 14, 14, 0.1);
 }
 .foot .icon {
   display: flex;
