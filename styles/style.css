@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --background: #c6e4d6;
+  --btn-bg: #006a50;
+  --text-color: #0e0e0e;
+  --placeholder-color: rgba(14, 14, 14, 0.3);
+  --p-color: rgba(14, 14, 14, 0.7);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Fira Sans", serif;
+  background-color: #f5f5f5;
+}
+/* Shared Elements */
+.p-text {
+  font-size: 16px;
+}
+.btn-text {
+  font-size: 18px;
+}
+.card-title {
+  font-size: 20px;
+}
+.hero-sub {
+  font-size: 24px;
+}
+.article-text {
+  font-size: 32px;
+}
+.section-title {
+  font-size: 40px;
+}
+.hero-title {
+  font-size: 56px;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 160px;
+}
+.navbar h3 {
+  color: rgb(14, 14, 14);
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.navbar button {
+  color: var(--btn-bg);
+  box-sizing: border-box;
+  border: 1px solid var(--btn-bg);
+  border-radius: 8px;
+  padding: 15px 30px;
+  font-family: Fira Sans;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
